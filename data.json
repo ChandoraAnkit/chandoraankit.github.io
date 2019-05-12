@@ -1,7 +1,7 @@
 {
     "firstName": "Ankit",
     "lastName": "Chandora",
-    "languagesStrong": ["Core Java", "Kotlin", "Android SDK"],
+    "languagesStrong": ["Java", "Kotlin", "Android SDK"],
     "others": ["XML", "SQLite","Room", "Firebase","Design Patterns","MVP", "MVVM", "RxJava","RESTful API","Material Design"],
     "tools":["Android Studio", "Eclipse", "Git", "Sublime"],
     "frameworks": ["Android SDK"],
