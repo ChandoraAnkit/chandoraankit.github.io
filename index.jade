@@ -1,0 +1,172 @@
+doctype html
+html(lang="en")
+    head
+        title= 'Ankit\'s Resume'
+        link(href="includes/css/style.css", rel="stylesheet")
+        // Link to the corresponding fonts
+        // Font: Raleway | https://github.com/mrkelly/lato.git
+        link(href="includes/fonts/raleway/raleway.css" rel="stylesheet")
+        // Font: Lato | https://github.com/softwaymedical/raleway.git
+        link(href="includes/fonts/lato/css/lato.min.css" rel="stylesheet")
+    body
+        #update-status
+            p.
+                Last updated on Mar 10, 2019
+        .heading
+            h1 #{firstName} #{lastName}
+            h3 #[a(href="https://chandoraankit.github.io" target="_blank") chandoraankit.github.io]
+            h3 #[a(href="mailto://ankit.chandora123@gmail.com") ankit.chandora123@gmail.com] | #[a(href="tel://+917620316968") +91 7620316968]
+        hr
+        .content
+            ////////////////////////
+            // Left Column begins //
+            ////////////////////////
+            .left-column
+                ///////// Begin Section: Education /////////
+                h1 Education
+                // Begin Subsection
+                h2 DYPIET, Pune
+                h4 B.E in Computer Science
+                h4 Aug 2015 - May 2019
+                //h4 Aggregate (till 7th sem): 71.12%
+                //p Jaipur, Rajasthan, India
+                // Space between two subsections
+                br
+                // Begin Subsection
+                h2 Modern Sr. Sec. School
+                h4 High School | Science
+                h4 July 2013 - May 2015
+                h4 12th standard: 87.0%
+                p Sirohi, Rajasthan, India
+                br
+                // Begin Subsection
+                h2 Modern Sr. Sec. School
+                h4 Till April 2013
+                h4 School | Secondary School
+                h4 10th standard: 88.67%
+                p Sirohi, Rajasthan, India
+
+
+                ///////// Begin Section: Links /////////
+                h1 Links
+                // List follows
+                ul.nostyle
+                    - for (var i = 0; i < links.length; i++)
+                        li #{links[i][0]}://#[a(href="#{links[i][1]}"  target="_blank") #{links[i][2]}]
+
+               
+                ///////// Begin Section: Skills /////////
+                h1 Skills
+                // Begin Subsection
+            
+                // Use no-overlap if inline list overlaps with any element
+                // above it
+                h4.no-overlap Programming 
+                // Note: Use span with li elements so the bullets can be closer
+                //       than the browser default value. Refer:
+                //       http://stackoverflow.com/questions/4373046/css-control-space-between-bullet-and-li
+                ul
+                    - for (var i = 0; i < languagesStrong.length; i++)
+                        li
+                            span= languagesStrong[i]
+
+                .clearfix
+
+                h4.no-overlap Others
+                ul
+                    - for (var i = 0; i < others.length; i++)
+                        li
+                            span= others[i]
+
+                .clearfix
+
+                h4.no-overlap Tools
+                ul
+                    - for (var i = 0; i < tools.length; i++)
+                        li
+                            span= tools[i]
+
+                .clearfix
+
+
+               
+                
+                // Space between subsections, in case if they are too close
+
+
+
+            ////////////////////////
+            /// Left Column ends ///
+            ////////////////////////
+
+
+            // Right Column Begins//
+            ////////////////////////
+            .right-column
+                ///////// Begin Section: Experience /////////
+                h1 Experience
+                // Begin Subsection
+                h2 Finance Republic, Bengaluru | #[span Android Developer]
+                h3 September 2018 - Present | Bengaluru, India
+                ul
+                    li End to end ownership of complete mobile product right from design, development to testing.
+                    li Maintenance of mobile app across different versions.
+                    li Implemented MVP architecture and Repository pattern to improve code reusability and maintainability.
+                    li Responsibilty of maintaining and releasing product on play store.
+
+                // Space between subsections, in case if they are too close
+
+                h2 Finance Republic, Bengaluru | #[span Android Developer Intern]
+                h3 June 2018 - August 2018 | Bengaluru, India
+                ul
+                    li Conceptualize and developed native Android Application including UI, core functionality and third party SDKs using Java and Kotlin.
+                    li Worked on firebase realtime database, firebase authentication and firebase testlab todevelop and test the app.
+                    li Worked closely with backend team to integrate REST APIs using Retrofit. Extensively worked with background tasks using Services, Threads etc..
+                    li Integrated Google DialogFlow SDK for ChatBot.
+                // Space between subsections, in case if they are too close
+
+                h2 Kwiqpick Services India Private Limited, Bengaluru | #[span Android Developer Intern]
+                h3 Jan 2018 - Feb 2018 | Bengaluru, India
+                ul
+                    li Designed and developed features on existing Android Application.
+                    li Worked on One-Signal push notification API.
+                    li Implemented notification storage feature using SQLite.
+                    li Used libraries like Volley for parsing JSON. Worked on APIs such as Geofencing API, Maps API etc.
+    
+                // Space between subsections, in case if they are too close
+
+                br
+
+                ///////// Begin Section: Projects /////////
+                h1 Projects
+
+                h2 BlogIt | #[span Android App]
+                h3 #[a(href="https://github.com/ChandoraAnkit/BlogIt"  target="_blank") Link]
+
+                ul
+                    li An Android App for sharing images and stuff. Users can like and unlike the posts.
+                    li Used Java, XML, Firebase Realtime database, Glide, ImageCropper, Google Authentication.
+                    li Available on Github.
+                
+
+                h2 NewsDroid | #[span News App]
+                h3 #[a(href="https://github.com/ChandoraAnkit/NewsDroid"  target="_blank") Link] 
+                ul
+                    li It is a news app that shows the latest news from multiple national and international sources.
+                    li Used Java, XML, Volley, Glide etc.
+                    li Available on playstore.
+
+                h2 Rider | #[span Android App] 
+                h3 #[a(href="https://github.com/ChandoraAnkit/Rider"  target="_blank") Link]
+                ul
+                    li It is a clone of cab booking app.
+                    li Used Java, XML, Volley, Picasso, Geofire, Location API, Firebase Realtime Database, Firebase Storage, Firebase Authentication.
+                    li Available on Github.
+
+                
+
+             
+
+            ////////////////////////
+            /// Right Column Ends //
+            ////////////////////////
